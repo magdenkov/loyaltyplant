@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * Таблица платежей и движения средств между счетами
  *
- * Created by kurbatov on 13.04.15.
+ * Created by Magdenkov on 13.04.15.
  */
 @Table
 @Entity
