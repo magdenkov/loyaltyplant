@@ -1,3 +1,6 @@
+https://docs.google.com/document/d/1ZvriCsOPb3RXobv1UM_sgmvcb70kGVIOdINROdjOEro/edit#
+
+
 Create emulator processing and web interface for it
 Test
 
