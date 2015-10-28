@@ -1,26 +1,29 @@
-# Создание эмулятора процессинга и веб­интерфейса для него
+Create emulator processing and web interface for it
+Test
 
-## Общая задача:
-- Создать систему процессинга денежных средств (как в банке) 
-  - существуют постоянно обновляемые данные о передвижении денежных средств, 
-содержащиеся в некоторой базе данных 
-  - система должна обрабатывать эти данные и совершать транзакции
+Overall objective:
+Create a system of processing of cash (as a bank)
+There are constantly updated data on the movement of funds contained in a database
+the system must process the data and make transactions
+Technologies:
+Database - MySQL or PostgreSQL. The database structure is left to the discretion of the Executive job.
+The system should be a web application written in Java 7-8, deployed using Tomcat 7
+To create a test is possible to use JMeter
+To develop recommend using IntelliJ Idea
 
-## Технологии:
-- База данных **MySQL** или **PostgreSQL**. Структура базы данных оставлена на усмотрение исполнителя задания
-- Сама система должна представлять собой веб­приложение, написанное на языке Java 7-8, развернутое с помощью **Tomcat 7**
-
-##Требования к системе:##
-- Должна быть возможность совершать следующие операции через веб-интерфейс:
-  - Управлять банковскими счетами:
-    - добавлять/удалять банковские счета (пользовательские аккаунты)
-    - получать список всех существующих банковских счетов
-    - получать остаток средств на указанном банковском счете
-  - Управлять денежными средствами:
-    - вычитать из баланса указанную сумму с указанного банковского счета
-    - добавлять указанную сумму на указанный банковский счет
-    - переводить указанную сумму с одного банковского счета на другой
-  - Система должна запрещать появление отрицательного баланса на банковском счете
-  - Система должна обеспечивать консистентность данных при любых нагрузках
-  - Запрещается использовать Optimistic/Pessimistic Locking (и другие техники) средствами СУБД
-
+System Requirements:
+It must be able to perform the following operations via the web interface:
+Manage bank accounts:
+add / delete bank accounts (user accounts)
+get a list of all existing bank accounts
+receive the balance in the specified bank account
+Manage cash:
+deducted from the balance of the said amount from the specified bank account
+Adds the specified amount to the designated bank account
+transfer a specified amount from one bank account to another
+The system must prohibit the appearance of a negative balance in the bank account
+The system should ensure consistency of data at all loads
+Do not use Optimistic / Pessimistic Locking (and other equipment) means the database
+Testing of the system:
+It is necessary to create a test plan for stress testing systems
+The tests should simulate a situation where more than one hundred members of bank accounts at the same time actively using the capabilities of the system, and check the correctness of the final state of the bank accounts
